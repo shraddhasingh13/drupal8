@@ -1,0 +1,6 @@
+name: Basic Page Module
+description: Basic Custom Module Through Hook Menu
+core: 8.x
+type: module
+package: Custom Modules
+

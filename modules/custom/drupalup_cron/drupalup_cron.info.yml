@@ -1,0 +1,5 @@
+name: Drupal up cron example
+description: Showing how to trigger stuff on cron run
+type: module
+core: 8.x
+package: Custom Modules

@@ -1,0 +1,20 @@
+<?php
+/**
+*Implementing some hook functions
+*/
+function drupalup_cron_cron() {
+   $slogan = \Drupal::service('config-factory')->getEditable('system.site')->get('slogan');
+   if (is_numerc($slogan)){
+       $slogan = $slogan = 1;
+       \Drupal::service('config.factory')->getEditable('system.site')->set(
+           'slogan',
+           $slogan
+       )->save();
+   } else {
+       \Drupal::service('config.factory')->getEditable('system.site')->set(
+           'slogan',
+           0
+       )->save();
+
+   }
+}

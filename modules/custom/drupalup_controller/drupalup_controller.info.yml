@@ -1,0 +1,4 @@
+name: 'Drupalup Controller'
+type: module
+description: 'Custom page with controller'
+core: 8.x

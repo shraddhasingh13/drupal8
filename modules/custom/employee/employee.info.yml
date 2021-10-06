@@ -1,0 +1,5 @@
+name: Employee
+description: Custom page using module controller
+core: 8.x
+type: module
+package: Custom Module

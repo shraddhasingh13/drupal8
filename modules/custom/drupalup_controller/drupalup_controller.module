@@ -1,0 +1,22 @@
+<?php 
+/**
+* Implementing hook_theme();
+*/
+ function drupalup_controller_theme($existing, $type, $theme, $path){
+     return array(
+         'article_list'=>array(
+             'variables'=>array('items'=>array(),'title'=>'')
+         )
+     );
+ }
+
+/**
+* Implementing hook_form_alter();
+*/
+ function drupalup_controller_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+     if($form_id=='contact_message_contact_us_form')
+        $form['#actions']['submit']['#value']=>t('Submit enquiry');
+    }
+ }
+
+

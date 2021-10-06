@@ -1,0 +1,14 @@
+name: Twig Template Theme
+description: 'It is simple twig template theme'
+type: theme
+version: VERSION
+core: 8.x
+package: Custom
+libraries:
+  -twigtemplate/styling
+regions:
+  heaer: Header
+  mnnu: Main Menu
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
